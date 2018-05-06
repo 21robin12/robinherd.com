@@ -1,0 +1,7 @@
+{
+    "allowJs": true,
+    "target": "es6",
+    "include": [
+        "scripts/**/*.ts"
+    ]
+}

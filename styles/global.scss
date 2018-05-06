@@ -1,0 +1,67 @@
+﻿html, body {
+	background: #001f3f;
+	width: 100%;
+	height: 100%;
+	padding: 0;
+	margin: 0;
+}
+
+a {
+    color: white;
+    text-decoration: none;
+}
+
+.container {
+	position: relative;
+	height: 100%;
+	width: 100%;
+}
+
+.inner {
+	position: absolute;
+	top: 45%;
+	left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 10000;
+}
+
+.canvas-main {
+    position: fixed;
+    top: 0;
+    left: 0;
+}
+
+.row {
+	width: 100%;
+	text-align: center;
+	color: rgb(220,220,220);
+	font-family: 'Lato', sans-serif;
+	font-size: 40px;
+	font-weight: 500;
+	
+	&.tiny {
+		font-size: 25px;
+	}
+	
+	&.small {
+		font-size: 32px;
+	}
+	
+	&.large {
+		font-size: 60px;
+    }
+    
+    &.padding {
+        padding-bottom: 12px;
+    }
+}
+
+.swipe-container {
+    position: fixed;
+    bottom: 20px;
+    color: white;
+    z-index: 10000;
+    width: 100%;
+    text-align: center;
+    font-size: 40px;
+}

@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+    <link rel="stylesheet" type="text/css" href="global.css">
+	<link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+	
+    <link href="https://fonts.googleapis.com/css?family=Lato:300" rel="stylesheet">
+    
+    <link rel="shortcut icon" href="favicon.png" type="image/x-icon">
+
+    <script src="scripts.js"></script>
+
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-71414065-6"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+
+        gtag('config', 'UA-71414065-6');
+    </script>
+
+    <!-- SEO -->
+    <meta name="keywords" content="software,engineer,developer,london,robin herd">
+    <title>Robin Herd | Software Engineer | London</title>
+
+    <script>
+        function onload() {  
+            var canvas = document.getElementById("canvas");
+
+            canvas.width = window.innerWidth;
+            canvas.height = window.innerHeight;
+
+            var app = new App(canvas);
+
+            function resizeCanvas(isFirst) {
+                canvas.width = window.innerWidth;
+                canvas.height = window.innerHeight;
+                app.restart();
+            }
+        
+            window.onresize = resizeCanvas;           
+            
+            app.start();
+        }
+    </script>
+</head>
+<body onload="onload()">
+    <div class="container">
+        <div class="inner">
+            <div class="row">Robin Herd</div>
+            <div class="row small">Software Engineer</div>
+            <div class="row small padding">London</div>
+            <div class="row large padding">
+                <a href="https://github.com/21robin12">
+                    <i class="fa fa-github" aria-hidden="true"></i>
+                </a>
+                <a href="https://www.linkedin.com/in/robin-herd-02775392/">
+                    <i class="fa fa-linkedin-square" aria-hidden="true"></i>
+                </a>
+            </div>
+            <div class="row tiny">contact@robinherd.com</div>
+        </div>
+    </div>
+
+    <div class="swipe-container">
+        <i class="fa fa-hand-o-up" aria-hidden="true" id="swipe-icon" style="visibility: hidden"></i>
+    </div>
+
+    <canvas id="canvas" class="canvas-main"></canvas>
+</body>
+</html>
